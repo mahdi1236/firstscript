@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="board.css">
+<body>
+        <style>
+        body {
+          margin: 0;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 10%;
+          background-image: url(navbar.jpg);
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+        }
+        li a {
+          display: block;
+          color: whitesmoke;
+          padding: 30px 16px;
+          text-decoration: none;
+        }
+        li a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        </style>
+        </head>
+        <body>
+                <ul>
+                        <li><a class="active" href="board.html">register</a></li>
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="board.html">Login</a></li>
+            </ul>
+<div class="navbar">
+        <li style="float:right"><a href="#home">Home</a></li>
+        <div class="dropdown" style="float: right"> 
+          <button class="dropbtn">
+              <img class="image" src="image.jpg">
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="profile.html">profile</a>
+            <a href="profile update.html">profile update</a>
+          </div>
+          <style>
+            input[type=text], select {
+              width: 100%;
+              padding: 12px 20px;
+              margin:1px ;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+            
+            input[type=submit] {
+              width: 100%;
+              background-color:#45a049;
+              color: white;
+              padding: 14px 20px;
+              margin: 1px ;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            
+</style>               
+<div class="container">
+   <div class="centered">
+     <p class="titre"><strong>Register</strong></p>
+     <hr  class="ligne"><br>
+   <label for="fname">First Name</label> <br>
+      <input type="text" id="fname" name="firstname:" placeholder="FULL NAME PLS"> <br> <br> 
+      <label for="lname" >Last Name  </label> <br>
+      <input type="text" id="lname" name="Your Username:" placeholder="USERNAME PLS"> <br> <br> 
+      <label for="Your email">Your email</label><br>
+      <input type="text" id="email" name="Your email:" placeholder="email PLS"> <br> <br> 
+      <label for="password:">password:</label><br>
+      <input type="text" id="password" name="password:" placeholder="password PLS"> <br> <br> 
+    </select>
+    <button onclick="ajout()"class="submit">submit</button>
+</div>
+</div> 
+<script src="register.js"></script>
+</body>
+</html>

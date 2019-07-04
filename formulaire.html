@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formulaire</title>
+    </head> 
+    <body>
+        <table>
+            <tr>
+                    <tr>
+                            <td>Nom d'utilisateur:<input type="text"  id="nom" onkeypress="return onlyAlphabets(event,this);" placeholder="Ecrivez votre Mot de passe" class="input"  name="field" maxlength="15"
+                                title="Only Letters"
+                                value="Type Letters Only"
+                                onblur="if (this.value == '') {this.value = 'Type Letters Only';}"
+                                onfocus="if (this.value == 'Type Letters Only') {this.value = '';}"/>
+                        </tr>
+        </tr>
+        <tr>
+            <td>Prenom:<input type="text" id="prenom" placeholder="Ecrivez votre Prenom" class="input"></td>
+        </tr>
+        <tr>
+                <form>
+            <td>Email:<input type="email" id ="email" name="recipient" type="text" placeholder="Ecrivez votre Email" class="input"></td>
+            
+        </tr>
+        <tr>
+            <td>Mot de passe:<input type="pass" id="password"  onkeypress="return alphanumeric(event,this);" placeholder="Ecrivez votre Mot de passe" class="input"  name="field" maxlength="8"
+                title="alphanumeric"
+                value="Type alphanumeric"
+                onblur="if (this.value == '') {this.value = 'Type alphanumeric';}"
+                onfocus="if (this.value == 'Type alphanumeric') {this.value = '';}"/>
+        </tr>
+        <tr>
+        <td><input type='button' value='validate' onclick=validate() ></input></td>
+    </form>
+        </tr>
+        </table>
+        <div id="afficher"></div>
+        <style>
+        .input{
+float: right
+        }
+        </style>
+        <script src="formulaire.js"></script>
+        </body>

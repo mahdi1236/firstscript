@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="board.css">
+<body>
+<style>
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-image: url(navbar.jpg);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+li a {
+    display: block;
+    color: whitesmoke;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" id="mahdi" href="#Home">Home</a></li>
+        <li><a href="board.html">login</a></li>
+        <li><a href="register.html">register</a></li>
+    </ul>
+        <div class="navbar">
+                <li style="float:right"><a href="#home">Home</a></li>
+                <li style="float:right"><a href="javascript:void(0)"onclick="deconnexion()">deconnexion</a></li>
+                <div class="dropdown" style="float: right"> 
+                    <button class="dropbtn">
+                        <img class="image" src="image.jpg">
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="profile.html">profile</a>
+                    <a href="profile update.html">profile update</a>
+                </div>
+            </div> 
+        </div>
+    <form action="/action_page.php">
+    </form>   
+  <div class="container">
+     <div class="centered">
+            <p><strong>dashboard</strong></p> <br><br>
+            <table>
+                <tr>
+                    <td><img src="Capture1.PNG" ></td>
+                    <td><img src="Capture2.PNG" ></td>
+                    <td><img src="Capture3.PNG"></td>
+                </tr>
+                <tr>
+                        <td><img src="Capture4.PNG"></td>
+                        <td><img src="Capture5.PNG"></td>
+                        <td><img src="Capture6.PNG"></td>
+                    </tr>
+            </table>
+            <div id="myDIV" class="header">
+                <h2 style="margin:5px">write your to do </h2>
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add your to do </span>
+              </div>
+              
+              <ul1 id="myUL" class="liste">
+                <li1>write your </li1>
+                <li1 class="checked">to do</li1>
+                <li1>here you</li1>
+                <li1>can write</l1>
+                <li1>all what</li1>
+                <li1>you need</li1>
+              </ul1>   
+            <script src="home.js"></script>
+            </html>
+        </body>
+          

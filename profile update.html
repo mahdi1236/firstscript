@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="profile update.css">
+        <style>
+                ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  overflow: hidden;
+                  background-color: #333;
+                }
+                
+                li {
+                  float: left;
+                }
+                
+                li a {
+                  display: block;
+                  color: white;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                }
+                
+                li a:hover:not(.active) {
+                  background-color: #111;
+                }
+                
+                .active {
+                  background-color: #4CAF50;
+                }
+                body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0033cc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#0033cc;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+                </style>
+    </head>
+    <body>
+            <ul>
+                    <li><a class="active" href="#home">profile update</a></li>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="board.html">login</a></li>
+                    <li><a href="register.html">register</a></li>
+                  </ul>                  
+                  <h3>profile updaite</h3>
+                  <p>update account information:</p>
+                  <br><br>
+                  <div class="container">
+                    <form action="/action_page.php">
+                      <label for="fname">email</label>
+                      <input type="text" id="fname" name="email" placeholder="Your email..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="lname">first Name</label>
+                      <input type="text" id="lname" name="firsttname" placeholder="Your first name..">
+                      <input type="submit" value="Update Profile">

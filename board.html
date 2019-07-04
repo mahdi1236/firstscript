@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="board.css">
+<body>
+        <style>
+        body {
+          margin: 0;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 10%;
+          background-image: url(navbar.jpg);
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+        }
+        li a {
+          display: block;
+          color: whitesmoke;
+          padding: 30px 16px;
+          text-decoration: none;
+        }
+        li a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+        </style>
+        </head>
+        <body>
+                <ul>
+                        <li><a class="active" href="board.html">Login</a></li>
+                        <li><a href="#home(0)"onclick="homeconnexion()">home</a></li>
+                        <li><a href="register.html">register</a></li>
+            </ul>
+<div class="navbar">
+        <li style="float:right"><a href="#home">Home</a></li>
+        <div class="dropdown" style="float: right"> 
+          <button class="dropbtn">
+              <img class="image" src="image.jpg">
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="profile.html">profile</a>
+            <a href="profile update.html">profile update</a>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="centered">
+            <img src="avatar.png" class="photo" >
+          <p class="titre"><strong>login</strong></p>
+           <input type="text" id="lname" name="firstname:" placeholder="Username"> <br><br>
+           <input type="text" id="password" name="password:" placeholder="Password"><br><br>
+           <button onclick="ajout()"class="Login">Login</button>
+           <P> Forgot Username/password?</P>
+           </div>
+           <script src="board.js"></script>
+          </body>
+          </html>
